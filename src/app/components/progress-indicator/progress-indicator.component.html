@@ -1,0 +1,14 @@
+<h4 class="small font-weight-bold">
+    {{ title }} 
+    <span *ngIf="value" class="float-right">{{ textValue }}</span>
+</h4>
+<div class="progress mb-4">
+    <div 
+        [ngClass]="class" 
+        role="progressbar" 
+        [style]="styleWidth"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="value">
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div [ngClass]="cardClass">
+    <div class="card-body">
+        <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+                <div [ngClass]="textClass">{{ headerText }}</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ indicator }}</div>
+            </div>
+            <div class="col-auto">
+                <i [ngClass]="iconClass"></i>
+            </div>
+        </div>
+    </div>
+</div>
