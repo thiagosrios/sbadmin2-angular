@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthLayoutComponent } from './layout/auth/auth-layout/auth-layout.component';
 import { MainLayoutComponent } from './layout/main/main-layout/main-layout.component';
 
-import { LoginComponent } from './layout/auth/login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 
 const routes: Routes = [
