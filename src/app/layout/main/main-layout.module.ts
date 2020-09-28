@@ -12,6 +12,7 @@ import { TopbarMessagesXsComponent } from './topbar-messages-xs/topbar-messages-
 import { TopbarUserInfoComponent } from './topbar-user-info/topbar-user-info.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
     ContentFooterComponent,

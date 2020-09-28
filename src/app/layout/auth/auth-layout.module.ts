@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -9,6 +10,7 @@ import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
     AuthLayoutComponent
