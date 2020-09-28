@@ -1,0 +1,94 @@
+<page-heading></page-heading>
+
+<!-- Cards -->
+<div class="row">
+
+    <card-info [color]="'primary'" [headerText]="'Earnings (Monthly)'" [indicator]="'$40,000'" [icon]="'fa-calendar'"
+        class="col-xl-3 col-md-6 mb-4">
+    </card-info>
+
+    <card-info [color]="'success'" [headerText]="'Earnings (Annual)'" [indicator]="'$215,000'" [icon]="'fa-dollar-sign'"
+        class="col-xl-3 col-md-6 mb-4">
+    </card-info>
+
+    <card-info [color]="'info'" [headerText]="'Tasks'" [indicator]="'50%'" [icon]="'fa-clipboard-list'"
+        class="col-xl-3 col-md-6 mb-4">
+    </card-info>
+
+    <card-info [color]="'warning'" [headerText]="'Pending Requests'" [indicator]="'50%'" [icon]="'fa-comments'"
+        class="col-xl-3 col-md-6 mb-4">
+    </card-info>
+
+</div>
+
+<!-- Gráficos -->
+<div class="row">
+
+    <div class="col-xl-8 col-lg-7 col-md-6">
+        <area-chart></area-chart>
+    </div>
+
+    <div class="col-xl-4 col-lg-5 col-md-6">
+        <donut-chart></donut-chart>
+    </div>
+
+</div>
+
+<!-- Content Row -->
+<div class="row">
+
+    <!-- Content Column -->
+    <div class="col-lg-6 mb-4">
+
+        <!-- Project Card Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+            </div>
+            <div class="card-body">
+                <progress-indicator title="Server Migration" value="20" color="danger">
+                </progress-indicator>
+                <progress-indicator title="Sales Tracking" value="40" color="warning">
+                </progress-indicator>
+                <progress-indicator title="Customer Database" value="60" color=""></progress-indicator>
+                <progress-indicator title="Payout Details" value="80" color="info"></progress-indicator>
+                <progress-indicator title="Account Setup" value="100" color="success">
+                </progress-indicator>
+            </div>
+        </div>
+
+        <colors></colors>
+
+    </div>
+
+    <div class="col-lg-6 mb-4">
+
+        <content-box [title]="'Illustrations'">
+            <div class="text-center">
+                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
+                    src="../assets/img/undraw_posting_photo.svg" alt="">
+            </div>
+            <p>
+                Add some quality, svg illustrations to your project courtesy of
+                <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>,
+                a constantly updated collection of beautiful svg images that you can
+                use completely free and without attribution!
+            </p>
+            <a target="_blank" rel="nofollow" href="https://undraw.co/">
+                Browse Illustrations on unDraw &rarr;
+            </a>
+        </content-box>
+
+        <content-box [title]="'Development Approach'">
+            <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS
+                bloat and poor
+                page performance. Custom CSS classes are used to create custom components and custom
+                utility classes.
+            </p>
+            <p class="mb-0">Before working with this theme, you should become familiar with the
+                Bootstrap framework,
+                especially the utility classes.</p>
+        </content-box>
+
+    </div>
+</div>

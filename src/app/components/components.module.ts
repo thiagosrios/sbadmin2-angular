@@ -5,6 +5,7 @@ import { AreaChartComponent } from './area-chart/area-chart.component';
 import { DonutChartComponent } from './donut-chart/donut-chart.component';
 import { ProgressIndicatorComponent } from './progress-indicator/progress-indicator.component';
 import { ContentBoxComponent } from './content-box/content-box.component';
+import { ColorsComponent } from './colors/colors.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ContentBoxComponent } from './content-box/content-box.component';
     AreaChartComponent,
     DonutChartComponent,
     ProgressIndicatorComponent,
-    ContentBoxComponent
+    ContentBoxComponent,
+    ColorsComponent
   ],
   imports: [CommonModule],
   exports: [
@@ -20,7 +22,8 @@ import { ContentBoxComponent } from './content-box/content-box.component';
     AreaChartComponent,
     DonutChartComponent,
     ProgressIndicatorComponent,
-    ContentBoxComponent
+    ContentBoxComponent,
+    ColorsComponent
   ]
 })
 export class ComponentsModule { }
