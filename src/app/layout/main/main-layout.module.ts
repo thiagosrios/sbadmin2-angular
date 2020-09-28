@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 
 import { ContentFooterComponent } from './content-footer/content-footer.component';
 import { LogoMenuComponent } from './logo-menu/logo-menu.component';
@@ -13,7 +12,6 @@ import { TopbarMessagesXsComponent } from './topbar-messages-xs/topbar-messages-
 import { TopbarUserInfoComponent } from './topbar-user-info/topbar-user-info.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
-import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   declarations: [
@@ -30,9 +28,7 @@ import { ComponentsModule } from '../../components/components.module';
     TopbarUserInfoComponent
   ],
   imports: [
-    RouterModule,
-    CommonModule, 
-    ComponentsModule
+    CommonModule,
   ],
   exports: [
     ContentFooterComponent,

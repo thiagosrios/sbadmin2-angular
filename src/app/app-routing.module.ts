@@ -4,8 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthLayoutComponent } from './layout/auth/auth-layout/auth-layout.component';
 import { MainLayoutComponent } from './layout/main/main-layout/main-layout.component';
 
-import { LoginComponent } from './pages/login/login.page';
+import { LoginPage } from './pages/login/login.page';
 import { DashboardPage } from './pages/dashboard/dashboard-page';
+import { RegisterPage } from './pages/register/register.page';
+import { PagesModule } from './pages/pages.module';
 
 const routes: Routes = [
   {
@@ -20,13 +22,14 @@ const routes: Routes = [
     path: '',
     component: AuthLayoutComponent,
     children: [
-      { path: 'login', component: LoginComponent },
+      { path: 'login', component: LoginPage },
+      { path: 'register', component: RegisterPage },
     ]
   },   
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [PagesModule, RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -3,20 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentsModule } from './components/components.module';
-
-import { DashboardPage } from './pages/dashboard/dashboard-page';
-import { MainLayoutModule } from './layout/main/main-layout.module';
-import { AuthLayoutModule } from './layout/auth/auth-layout.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
-  declarations: [AppComponent, DashboardPage, DashboardPage],
+  declarations: [
+    AppComponent, 
+  ],
   imports: [
     BrowserModule,
-    ComponentsModule,
-    MainLayoutModule,
-    AuthLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
