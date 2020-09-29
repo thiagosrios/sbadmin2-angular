@@ -10,22 +10,22 @@ import { LoginPage } from './login/login.page';
 import { RegisterPage } from './register/register.page';
 
 @NgModule({
-    declarations: [
-        DashboardPage,
-        LoginPage,
-        RegisterPage
-    ],
-    imports: [
-        CommonModule,
-        RouterModule,
-        ComponentsModule,
-        MainLayoutModule,
-        AuthLayoutModule,
-    ],
-    exports: [
-        DashboardPage,
-        LoginPage,
-        RegisterPage
-    ]
+	declarations: [
+		DashboardPage,
+		LoginPage,
+		RegisterPage
+	],
+	imports: [
+		CommonModule,
+		RouterModule,
+		ComponentsModule,
+		MainLayoutModule,
+		AuthLayoutModule,
+	],
+	exports: [
+		DashboardPage,
+		LoginPage,
+		RegisterPage
+	]
 })
 export class PagesModule { }

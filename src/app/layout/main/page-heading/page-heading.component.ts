@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'page-heading',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageHeadingComponent implements OnInit {
 
-  constructor() { }
+  @Input() title: string;
 
-  ngOnInit(): void {
+  constructor() {
+    this.title = "";
   }
+
+  ngOnInit(): void { }
 
 }

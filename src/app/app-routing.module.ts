@@ -15,7 +15,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       { path: '', component: DashboardPage },
-      { path: 'dashboard', component: DashboardPage }
+      { path: 'dashboard', component: DashboardPage },
     ]
   },
   {
