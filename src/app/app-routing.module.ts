@@ -12,6 +12,7 @@ import { FormPage } from './pages/form/form.page';
 import { BlankPage } from './pages/blank/blank.page';
 import { NotFoundPage } from './pages/not-found/not-found.page';
 import { ForgotPasswordPage } from './pages/forgot-password/forgot-password.page';
+import { TablesPage } from './pages/tables/tables.page';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
       { path: 'form', component: FormPage },
       { path: 'blank', component: BlankPage },
       { path: 'not-found', component: NotFoundPage },
+      { path: 'tables', component: TablesPage },
     ]
   },
   {

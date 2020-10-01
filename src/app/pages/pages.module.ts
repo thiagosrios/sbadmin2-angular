@@ -12,6 +12,7 @@ import { RegisterPage } from './register/register.page';
 import { BlankPage } from './blank/blank.page';
 import { NotFoundPage } from './not-found/not-found.page';
 import { ForgotPasswordPage } from './forgot-password/forgot-password.page';
+import { TablesPage } from './tables/tables.page';
 
 @NgModule({
 	declarations: [
@@ -21,7 +22,8 @@ import { ForgotPasswordPage } from './forgot-password/forgot-password.page';
 		FormPage,
 		BlankPage,
 		NotFoundPage,
-		ForgotPasswordPage
+		ForgotPasswordPage,
+		TablesPage
 	],
 	imports: [
 		CommonModule,
