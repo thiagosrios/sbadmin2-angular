@@ -8,6 +8,7 @@ import { LoginPage } from './pages/login/login.page';
 import { DashboardPage } from './pages/dashboard/dashboard-page';
 import { RegisterPage } from './pages/register/register.page';
 import { PagesModule } from './pages/pages.module';
+import { FormPage } from './pages/form/form.page';
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardPage },
       { path: 'dashboard', component: DashboardPage },
+      { path: 'form', component: FormPage },
     ]
   },
   {

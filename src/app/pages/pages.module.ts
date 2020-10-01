@@ -6,6 +6,7 @@ import { ComponentsModule } from '../components/components.module';
 import { AuthLayoutModule } from '../layout/auth/auth-layout.module';
 import { MainLayoutModule } from '../layout/main/main-layout.module';
 import { DashboardPage } from './dashboard/dashboard-page';
+import { FormPage } from './form/form.page';
 import { LoginPage } from './login/login.page';
 import { RegisterPage } from './register/register.page';
 
@@ -13,7 +14,8 @@ import { RegisterPage } from './register/register.page';
 	declarations: [
 		DashboardPage,
 		LoginPage,
-		RegisterPage
+		RegisterPage,
+		FormPage
 	],
 	imports: [
 		CommonModule,
@@ -25,7 +27,8 @@ import { RegisterPage } from './register/register.page';
 	exports: [
 		DashboardPage,
 		LoginPage,
-		RegisterPage
+		RegisterPage,
+		FormPage
 	]
 })
 export class PagesModule { }

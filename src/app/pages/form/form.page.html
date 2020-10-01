@@ -1,0 +1,55 @@
+<page-heading [title]="'New User'"></page-heading>
+
+<div class="row">
+
+    <form class="col-lg-8 col-mb-8">
+
+        <div class="form-group row">
+          <div class="col-sm-6 col-mb-6">
+            <input type="text" class="form-control" id="name"  placeholder="Name">
+          </div>
+          <div class="col-sm-6 col-mb-6">
+            <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="E-mail">
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-6 col-mb-6">
+            <input type="password" class="form-control" id="password"  placeholder="Password">
+          </div>
+          <div class="col-sm-6 col-mb-6">
+            <input type="password" class="form-control" id="password-confirmation" placeholder="Password Confirmation">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-12 col-mb-12">
+              <select class="form-control" name="profile" id="profile">
+                  <option value="Enfermeira">Select profile type... </option>
+                  <option value="Enfermeira">Admin</option>
+                  <option value="Enfermeira">User</option>
+              </select>              
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-lg-2">
+                <button class="btn btn-danger btn-user btn-block">
+                    Cancel
+                </button>
+            </div>
+
+            <div class="col-lg-2">
+                <button class="btn btn-primary btn-user btn-block">
+                    Save
+                </button>
+            </div>
+        </div>
+
+      </form>
+
+</div>

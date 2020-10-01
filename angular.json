@@ -35,7 +35,7 @@
             "scripts": [
               "src/assets/vendor/jquery/jquery.min.js",
               "src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
-              "src/assets/vendor/jquery-easing/jquery.easing.min.js"              
+              "src/assets/vendor/jquery-easing/jquery.easing.min.js"
             ]
           },
           "configurations": {
@@ -129,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "admin"
+    }
+  },
+  "defaultProject": "admin",
+  "cli": {
+    "analytics": false
+  }
 }
