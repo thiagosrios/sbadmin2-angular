@@ -9,6 +9,9 @@ import { DashboardPage } from './pages/dashboard/dashboard-page';
 import { RegisterPage } from './pages/register/register.page';
 import { PagesModule } from './pages/pages.module';
 import { FormPage } from './pages/form/form.page';
+import { BlankPage } from './pages/blank/blank.page';
+import { NotFoundPage } from './pages/not-found/not-found.page';
+import { ForgotPasswordPage } from './pages/forgot-password/forgot-password.page';
 
 const routes: Routes = [
   {
@@ -18,6 +21,8 @@ const routes: Routes = [
       { path: '', component: DashboardPage },
       { path: 'dashboard', component: DashboardPage },
       { path: 'form', component: FormPage },
+      { path: 'blank', component: BlankPage },
+      { path: 'not-found', component: NotFoundPage },
     ]
   },
   {
@@ -26,6 +31,7 @@ const routes: Routes = [
     children: [
       { path: 'login', component: LoginPage },
       { path: 'register', component: RegisterPage },
+      { path: 'forgot-password', component: ForgotPasswordPage },
     ]
   },   
 ];

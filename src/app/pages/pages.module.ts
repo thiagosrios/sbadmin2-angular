@@ -9,13 +9,19 @@ import { DashboardPage } from './dashboard/dashboard-page';
 import { FormPage } from './form/form.page';
 import { LoginPage } from './login/login.page';
 import { RegisterPage } from './register/register.page';
+import { BlankPage } from './blank/blank.page';
+import { NotFoundPage } from './not-found/not-found.page';
+import { ForgotPasswordPage } from './forgot-password/forgot-password.page';
 
 @NgModule({
 	declarations: [
 		DashboardPage,
 		LoginPage,
 		RegisterPage,
-		FormPage
+		FormPage,
+		BlankPage,
+		NotFoundPage,
+		ForgotPasswordPage
 	],
 	imports: [
 		CommonModule,
@@ -23,12 +29,6 @@ import { RegisterPage } from './register/register.page';
 		ComponentsModule,
 		MainLayoutModule,
 		AuthLayoutModule,
-	],
-	exports: [
-		DashboardPage,
-		LoginPage,
-		RegisterPage,
-		FormPage
 	]
 })
 export class PagesModule { }
