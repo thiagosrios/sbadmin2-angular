@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 import { AuthLayoutComponent } from './layout/auth/auth-layout/auth-layout.component';
 import { MainLayoutComponent } from './layout/main/main-layout/main-layout.component';
@@ -13,6 +13,10 @@ import { BlankPage } from './pages/blank/blank.page';
 import { NotFoundPage } from './pages/not-found/not-found.page';
 import { ForgotPasswordPage } from './pages/forgot-password/forgot-password.page';
 import { TablesPage } from './pages/tables/tables.page';
+import { ButtonsPage } from './pages/buttons/buttons.page';
+import { CardsPage } from './pages/cards/cards.page';
+import { ChartsPage } from './pages/charts/charts.page';
+import { UtilitiesPage } from './pages/utilities/utilities.page';
 
 const routes: Routes = [
   {
@@ -25,6 +29,10 @@ const routes: Routes = [
       { path: 'blank', component: BlankPage },
       { path: 'not-found', component: NotFoundPage },
       { path: 'tables', component: TablesPage },
+      { path: 'buttons', component: ButtonsPage },
+      { path: 'cards', component: CardsPage },
+      { path: 'charts', component: ChartsPage },
+      { path: 'utilities', component: UtilitiesPage },
     ]
   },
   {
@@ -38,8 +46,13 @@ const routes: Routes = [
   },   
 ];
 
+const routesConfig: ExtraOptions = {
+  enableTracing: false,
+  anchorScrolling: 'enabled'
+};
+
 @NgModule({
-  imports: [PagesModule, RouterModule.forRoot(routes)],
+  imports: [PagesModule, RouterModule.forRoot(routes, routesConfig)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

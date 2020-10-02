@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { ContentFooterComponent } from './content-footer/content-footer.component';
 import { LogoMenuComponent } from './logo-menu/logo-menu.component';
-import { PageHeadingComponent } from './page-heading/page-heading.component';
 import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
 import { TopbarSearchComponent } from './topbar-search/topbar-search.component';
 import { TopbarAlertsComponent } from './topbar-alerts/topbar-alerts.component';
@@ -19,7 +18,6 @@ import { RouterModule } from '@angular/router';
     ContentFooterComponent,
     LogoMenuComponent,
     MainLayoutComponent,
-    PageHeadingComponent,
     SidebarMenuComponent,
     TopbarComponent,
     TopbarAlertsComponent,
@@ -36,7 +34,6 @@ import { RouterModule } from '@angular/router';
     ContentFooterComponent,
     LogoMenuComponent,
     MainLayoutComponent,
-    PageHeadingComponent,
     SidebarMenuComponent,
     TopbarComponent,
     TopbarAlertsComponent,

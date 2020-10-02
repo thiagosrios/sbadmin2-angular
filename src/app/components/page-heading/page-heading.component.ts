@@ -8,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PageHeadingComponent implements OnInit {
 
   @Input() title: string;
-
+  @Input() showButton: boolean; 
+  
   constructor() {
     this.title = "";
   }

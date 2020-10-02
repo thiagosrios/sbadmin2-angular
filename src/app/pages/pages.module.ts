@@ -13,6 +13,10 @@ import { BlankPage } from './blank/blank.page';
 import { NotFoundPage } from './not-found/not-found.page';
 import { ForgotPasswordPage } from './forgot-password/forgot-password.page';
 import { TablesPage } from './tables/tables.page';
+import { ButtonsPage } from './buttons/buttons.page';
+import { CardsPage } from './cards/cards.page';
+import { ChartsPage } from './charts/charts.page';
+import { UtilitiesPage } from './utilities/utilities.page';
 
 @NgModule({
 	declarations: [
@@ -23,7 +27,11 @@ import { TablesPage } from './tables/tables.page';
 		BlankPage,
 		NotFoundPage,
 		ForgotPasswordPage,
-		TablesPage
+		TablesPage,
+		ButtonsPage,
+		CardsPage,
+		ChartsPage,
+		UtilitiesPage
 	],
 	imports: [
 		CommonModule,
