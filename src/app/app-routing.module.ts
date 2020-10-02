@@ -46,6 +46,7 @@ const routes: Routes = [
   },   
 ];
 
+// Configurações do RouterModule para permitir links com âncora 
 const routesConfig: ExtraOptions = {
   enableTracing: false,
   anchorScrolling: 'enabled'

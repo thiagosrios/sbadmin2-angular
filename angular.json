@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/assets/css/sb-admin-2.min.css",
+              "src/assets/scss/sb-admin-2.scss",
               "src/assets/vendor/fontawesome-free/css/all.min.css",
               "src/assets/vendor/datatables/dataTables.bootstrap4.min.css",
               "src/styles.scss"
